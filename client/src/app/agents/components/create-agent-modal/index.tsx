@@ -48,13 +48,13 @@ const CreateAgent = (props: Props) => {
     return (
         <Dialog open={showModal} onOpenChange={(open) => setShowModal(open)}>
             <DialogTrigger>
-                <Button variant="secondary" onClick={() => setShowModal(true)}>Create ticket</Button>
+                <Button variant="secondary" onClick={() => setShowModal(true)}>Create agent</Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px]">
                 <DialogHeader>
-                    <DialogTitle>Create ticket</DialogTitle>
+                    <DialogTitle>Create agent</DialogTitle>
                     <DialogDescription>
-                        Create a new ticket.
+                        Create a new agent.
                     </DialogDescription>
                 </DialogHeader>
                 <div className="grid gap-4 py-4">
