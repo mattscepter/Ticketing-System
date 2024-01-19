@@ -22,7 +22,7 @@ async function getAllAgents() {
 
     // Fetch the agents
     const res = await fetch(
-        `http://13.232.83.2/api/support-agents`,
+        `https://test.propreturns.com/api/support-agents`,
         {
             method: "GET",
             next: {

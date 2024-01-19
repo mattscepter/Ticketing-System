@@ -154,7 +154,7 @@ const CreateAgent = (props: Props) => {
                         }
 
                         setLoading(true)
-                        await fetch("http://13.232.83.2/api/support-agents", {
+                        await fetch("https://test.propreturns.com/api/support-agents", {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/json",
