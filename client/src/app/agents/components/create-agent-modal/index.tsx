@@ -154,7 +154,7 @@ const CreateAgent = (props: Props) => {
                         }
 
                         setLoading(true)
-                        await fetch("https://test.propreturns.com/api/support-agents", {
+                        await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/support-agents`, {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/json",

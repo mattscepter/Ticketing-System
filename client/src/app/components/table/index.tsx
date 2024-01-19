@@ -52,7 +52,7 @@ const TicketTable = ({ ticketsData, page, count, agents }: Props) => {
 
     // Function to update status of ticket
     const updateStatus = async (ticketId: string, status: 'New' | 'Assigned' | 'Resolved') => {
-        const res = await fetch(`https://test.propreturns.com/api/support-tickets/${ticketId}`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/support-tickets/${ticketId}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

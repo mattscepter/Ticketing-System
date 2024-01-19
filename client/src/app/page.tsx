@@ -63,7 +63,7 @@ async function getAllTickets(searchParams: {
 
   // Fetch data
   const res = await fetch(
-    `https://test.propreturns.com/api/support-tickets?${queryString}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/support-tickets?${queryString}`,
     {
       method: "GET",
       next: {
@@ -73,7 +73,7 @@ async function getAllTickets(searchParams: {
   );
 
   const agents = await fetch(
-    `https://test.propreturns.com/api/support-agents?active=true`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/support-agents?active=true`,
     {
       method: "GET",
       next: {

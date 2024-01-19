@@ -35,7 +35,7 @@ const AgentTable = ({ agentsData }: Props) => {
 
     // function to update active status of an agent
     const updateActiveStatus = async (ticketId: string, status: boolean) => {
-        const res = await fetch(`https://test.propreturns.com/api/support-agents/${ticketId}`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/support-agents/${ticketId}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
