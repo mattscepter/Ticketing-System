@@ -22,7 +22,7 @@ async function getAllAgents() {
 
     // Fetch the agents
     const res = await fetch(
-        `${process.env.NEXT_BASE_URL}/api/support-agents`,
+        `http://13.232.83.2/api/support-agents/api/support-agents`,
         {
             method: "GET",
             next: {
