@@ -174,7 +174,7 @@ const CreateTicket = (props: Props) => {
                         }
                         setLoading(true)
                         // Create ticket
-                        await fetch("http://13.232.83.2/api/support-agents/api/support-tickets", {
+                        await fetch("http://13.232.83.2/api/support-tickets", {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/json",

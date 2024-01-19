@@ -63,7 +63,7 @@ async function getAllTickets(searchParams: {
 
   // Fetch data
   const res = await fetch(
-    `http://13.232.83.2/api/support-agents/api/support-tickets?${queryString}`,
+    `http://13.232.83.2/api/support-tickets?${queryString}`,
     {
       method: "GET",
       next: {
@@ -73,7 +73,7 @@ async function getAllTickets(searchParams: {
   );
 
   const agents = await fetch(
-    `http://13.232.83.2/api/support-agents/api/support-agents?active=true`,
+    `http://13.232.83.2/api/support-agents?active=true`,
     {
       method: "GET",
       next: {
